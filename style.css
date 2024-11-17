@@ -448,7 +448,7 @@ span.clock_time{
 }
 
 input[type=range].slider {
--webkit-appearance: none;
+-webkit-appeaance: none;
 width: 100%;
 margin: 0.7px 0;
 }

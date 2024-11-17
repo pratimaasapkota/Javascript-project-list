@@ -328,7 +328,7 @@ span.clock_time{
 }
 
 .analog_clock{
-  display:;
+  display:inline-block;
   position:relative;
   width:250px;
   height:250px;

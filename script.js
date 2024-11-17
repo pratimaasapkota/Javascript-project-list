@@ -84,21 +84,6 @@ $(function(){
             }) 
         })
         
-        /*about=()=>{
-            Swal.fire({
-                html:"<img src='https://www.sololearn.com/avatars/c217f845-8dc6-44e2-b17c-a2bc0f6d9cbb.jpg' alt='vikky' style='width:100px;height:100px;border-radius:50%;'><br />Level: 8<br />3257 XP<br /><br /><span style='font-size:1.2em'><b>Author: </b>Viknesh Vikky</span><br /><br /><span style='font-size:1.2em'><b>Date Modified: </b>May 13, 2019</span>",
-                customClass:{
-                    popup: "about-pop",
-                    
-                },
-                showConfirmButton:false,
-                showCloseButton:true,
-                allowOutsideClick:false,
-                position:"top-end"
-            }).then(()=>{
-                $("#opn").trigger("click");
-            })
-        }*/
         
  /* ------------------------------------------
 --------------calculator------------------

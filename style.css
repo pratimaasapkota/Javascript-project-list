@@ -1,0 +1,607 @@
+
+
+body{
+    background-color:#e6f7ff;
+
+    width:100%;
+    color:#000;
+    padding:5px;
+    text-align:center;
+      }
+      
+*:focus,*,*:hover{
+    outline:none;
+    }      
+      button.ok{
+  color:white;
+  font-family:'Handlee';
+  font-weight:800;
+  background:#009696 !important;
+  margin-top:0;
+  padding:5px 15px;
+  border-radius:7px;
+  border:none;
+  box-shadow:0 6px 5px -5px #000;
+  outline:none;
+}
+
+button,button:hover,button:focus{
+  outline:none;
+  background:none;
+  color:#ccc;
+}
+      
+      header{
+
+          color:black;
+          padding:10px 7px; 
+          font-family: 'Raleway';
+          margin:0;
+          height:45px;
+          width:100%;
+          overflow:hidden;
+          box-shadow:0px 5px 5px -5px #009696;
+          text-align:left;
+      }
+      
+      .help{
+          display:inline-block;
+          padding:5px;
+          margin:0;
+      }
+      
+      .info{
+          display:inline-block;
+          padding:5px;
+          margin:0;
+      }
+      
+      .intro{
+          color:#000;
+          background:white;
+          border:2px solid #009696;
+          padding:10px;
+          margin-bottom:10px; 
+          font-size:18px; 
+          font-family: 'Montserrat', sans-serif;
+          text-align:justify;
+      }
+
+       .title{
+          font-family: 'Electrolize', serif;
+          text-align:left;
+          color:white;
+          padding:5px 5px 5px 10px;
+          background-color:#009696;
+          font-size: 22px;
+          font-weight:600;
+          margin:auto;
+          margin-bottom: 10px;
+          box-shadow:0 5px 5px -5px black, inset 0 0 35px #555;
+          border-radius:10px;
+
+      }
+      .description{
+          background-color: white;
+          color:#000;
+          border:2px solid #009696;
+          padding:10px 10px 30px 20px;
+      
+          margin-bottom:10px; 
+          font-size:20px; 
+          font-family: 'Montserrat', sans-serif;
+          display: none;
+          text-align:justify;
+      }
+      .description span{
+          text-decoration:underline;
+          font-size:25px;
+          color: #009696;
+
+      }
+      
+      span.demo, span.intro-demo{
+          display:inline-block;
+          font-size:14px;
+          background:#009696;
+          padding:5px 10px;
+          border-radius:20px;
+          box-shadow:inset 0 0 15px #0086a6, 0 5px 5px -4px #000;
+          text-decoration:none;
+          color:#000;
+      }
+      
+      .demo_cont{
+          border-radius:10px;
+          box-shadow:1px 1px 5px -1px #aaa;
+      }
+
+*{
+  padding:0;
+  margin:0;
+}
+
+/*-------------calculator----------------*/
+
+.calc{
+  padding:0px;
+  width:300px;
+  height:470px;
+  overflow:hidden;
+  margin:auto;
+  display:none;
+  box-shadow:1px 1px 5px -1px #aaa;
+}
+
+.input{
+  width:98%;
+  padding:0 0 0 2%;
+  height:60px;
+  line-height:60px;
+  font-family:sans-serif;
+  color:#000;
+  font-weight:300;
+  font-size:1.1em;
+  overflow:hidden;
+}
+
+.result{
+  width:98%;
+  padding:0 0 0 2%;
+  height:60px;
+  line-height:60px;
+  font-family:sans-serif;
+  color:#aaa;
+  font-weight:350;
+  font-size:1em;
+  overflow:hidden;
+}
+
+.calc .buttons{
+ position:relative;
+ display:inline-block;
+ background:#262626;
+ top:12px;
+ height:370px;
+ overflow:hidden;
+ width:100%;
+}
+
+.calc button{
+  width:23.3%;
+  padding:7% 0;
+  border:none;
+  background:none;
+  outline:none;
+  color:#fff;
+  text-align:center;
+  font-size:1em;
+}
+
+.main{
+  position:absolute;
+  width:93%;
+  display:inline-block;
+  background:#262626;
+  box-shadow:inset 0 0 5px -1px #262626;
+}
+
+.more{
+  position:absolute;
+  width:30%;
+  height:370px;
+  left:92%;
+  display:inline-block;
+  background:#00f1af;
+  box-shadow:inset 0 0 5px -1px #262626;
+}
+
+.more_less{
+  position:absolute;
+  width:25px;
+  padding:7% 0;
+  height:370px;
+  display:inline-block;
+  box-shadow:0px 0px 5px -1px #aaa;
+}
+
+.more_option{
+  margin-left:26px;
+  padding-top:2.5px;
+  width:95%;
+}
+
+.more button{
+  width:80%;
+  padding:9.5% 0;
+  border:none;
+  background:none;
+  box-shadow:0 2px 3px -2px #aaa;
+  color:#262626;
+  text-align:center;
+  font-size:0.85em;
+}
+
+/*-----------unit converter-------------*/ 
+
+.heading{
+  display:inline-block ;
+  width:100%;
+  padding:8px 5%;
+  background-color:#009696;
+  box-shadow: 0 5px 5px -5px #000;
+  border-radius:5px;
+  text-align:left;
+  font-size:14px;
+  color:#000;
+  margin:auto;
+  margin-top:10px;
+}
+
+.converter{
+  display:none;
+  padding:20px;
+}
+
+.desc{
+  display:inline-block ;
+  padding:10px 0 20px 5%;
+  width:100%;
+  margin:10px auto;
+  border:2px solid #009696;
+  display:none;
+  color:#000;
+}
+
+.desc span{
+  display:inline-block;
+  font-family:monospace;
+  font-weight:630;
+  margin-top:10px;
+  font-size:14px;
+  color:#009696;
+  text-decoration:none;
+}
+
+.converter input{
+  padding:5px 3%;
+  width:85%;
+  border:none;
+  font-size:14px;
+  border-bottom:1px solid #aaa;
+}  
+
+.converter ::placeholder{
+  font-size:12px;
+}
+
+/*----------------clock------------------*/
+
+.clock{
+  display:none;
+  padding:40px 30px 0px 30px;
+}
+
+
+
+.digital_clock{
+ color:#000;
+ width:250px;
+ text-align:center;
+ text-decoration:none;
+ background-color:#eee;
+ padding:10px 20px;
+ margin:auto;
+ box-shadow:inset 0 0 15px #000;
+ border:20px solid #aaa;
+ border-radius:10px;
+ font-family: 'Electrolize', sans-serif;
+}
+
+span.clock_time{
+ display:inline-block;
+ font-size:2em;
+ font-weight:350;
+ padding:5px 10%;
+ margin:0;
+ text-decoration:none;
+ color:#000;
+}
+
+.clock_time span{
+  color:#000;
+  text-decoration:none;
+}
+
+.dow span{
+  font-size:10px;
+  font-weight:bold;
+  color:#ccc;
+  margin:0 2px 0 0;
+  text-decoration:none;
+} 
+
+
+*{
+  padding:0;
+  margin:0;
+}
+
+.analog_clock{
+  display:;
+  position:relative;
+  width:250px;
+  height:250px;
+  margin:auto;
+  background-image:url("https://sitejerk.com/images/transparent-5-minute-countdown-6.png");
+  background-size:250px 250px;
+  background-repeat:no-repeat;
+  top:-25px;
+  left:0px;
+  /*box-shadow:inset 0 0 55px darkorange;*/
+  border-radius:50%;
+}
+
+.outer{
+  position:absolute;
+  width:195px;
+  height:195px;
+  border:10px solid white;
+  border-radius:50%;
+  top:27.5px;
+  left:27.5px;
+  box-shadow:inset 0 0 3px #eee, 0px 1px 5px -1px darkorange;
+}
+
+.pad{
+  position:absolute;
+  width:121px;
+  height:121px;
+  border-radius:50%;
+  background-color:white;
+  top:65px;
+  left:65px;
+  box-shadow:inset 0 0 45px orange;
+}
+
+.hh{
+  position:absolute;
+  width:4px;
+  height:50px;
+  background-color:darkorange;
+  top:76.5px;
+  left:49.2%;
+  border-top-left-radius:50%;
+  border-top-right-radius:50%;
+  transform-origin:bottom;
+}
+
+.mh{
+ position:absolute;
+  width:2.5px;
+  height:60px;
+  background-color:darkorange;
+  top:66.5px;
+  left:49.5%;
+  border-top-left-radius:50%;
+  border-top-right-radius:50%; 
+  transform-origin:bottom;
+}
+
+.sh{
+  position:absolute;
+  width:1.5px;
+  height:80px;
+  background-color:#262626;
+  top:56.5px;
+  left:49.67%;
+  border-top-left-radius:50%;
+  border-top-right-radius:50%;
+  transform-origin:50% 70px;
+}
+
+.sh::after{
+  position:absolute;
+  content:"";
+  width:5px;
+  height:5px;
+  border-radius:50%;
+  background:#262626;
+  top:79px;
+  left:-1.6px;
+}
+
+.pin{
+  position:absolute;
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  top:121px;
+  left:48%;
+  background-color:orange;
+  box-shadow:1px 1px 3px -2px #000;
+}
+
+/*-------------color picker--------------*/
+
+.color_picker{
+  width:300px;
+  margin:auto;
+  margin-top:10px;
+  padding:10px;
+  display:none;
+}
+
+#picker{
+  width:100%;
+  height:100px;
+  margin:20px auto;
+  background-color:#000;
+  border-radius:5px;
+  box-shadow:0px 5px 10px -5px #000;
+}
+
+.slider{
+  display:inline-block;
+  width:280px;
+  padding:10px 0;
+}
+
+input[type=range].slider {
+-webkit-appearance: none;
+width: 100%;
+margin: 0.7px 0;
+}
+
+input[type=range].slider:focus {
+outline: none;
+}
+
+input[type=range].slider::-webkit-slider-runnable-track {
+width: 100%;
+height: 5px;
+cursor: pointer;
+border-radius: 5px;
+border:none;
+}
+
+input[type=range].slider::-webkit-slider-thumb {
+border: none;
+height: 20px;
+width: 20px;
+border-radius: 50%;
+cursor: pointer;
+-webkit-appearance: none;
+margin-top: -7.5px;
+}
+
+input[type=range]#r::-webkit-slider-runnable-track,  input[type=range]#r::-webkit-slider-thumb{
+background:red;
+}
+
+input[type=range]#g::-webkit-slider-runnable-track,  input[type=range]#g::-webkit-slider-thumb{
+background:green;
+}
+
+input[type=range]#b::-webkit-slider-runnable-track,  input[type=range]#b::-webkit-slider-thumb{
+background:blue;
+}
+
+/* The actual popup */
+.copy .popuptext{
+display:none;
+width:auto;
+background-color: #555;
+color: #fff;
+text-align: center;
+font-size:12px;
+border-radius: 6px;
+padding: 4px;
+position: absolute;
+text-decoration:none;
+z-index: 1;
+bottom: 125%;
+left: 50%;
+margin-left: -30px;
+}
+
+/* Popup arrow */
+.copy .popuptext::after {
+content: "";
+position: absolute;
+top: 100%;
+left: 50%;
+margin-left: -5px;
+border-width: 5px;
+border-style: solid;
+border-color: #555 transparent transparent transparent;
+}
+
+.rgb{
+  display:inline-block;
+  width:100%;
+  margin:10px auto;
+  padding:10px;
+  text-align:center;
+  
+}
+
+#rgb,#hex{
+  font-family:monospace;
+  font-size:16px;
+  text-decoration:none;
+  color:black;
+}
+
+.rgb button{
+  display:inline-block;
+  position:relative;
+  margin-left:10px;
+  border:none;
+  font-family:monospace;
+  background:#009696;
+  font-size:12px;
+  color:white;
+  padding:5px 10px;
+  border-radius:10px;
+  box-shadow:0 5px 5px -5px #000;
+}
+
+/*-------------stop watch----------------*/
+
+.stop_watch{
+  width:300px;
+  padding:20px;
+  margin:auto;
+}
+
+.timer{
+  width:185px;
+  padding:5px 15px;
+  margin:auto;
+  font-size:1.7em;
+  text-align:center;
+  margin-bottom:10px;
+  font-family:monospace;
+  color:black;
+  
+}
+
+.stop_watch button{
+  width:55px;
+  border:none;
+  margin:0 0 0 4px;
+  padding:7px 0;
+  text-align:center;
+  border-radius:10px;
+  background:#009696;
+  color:#fff;
+  font-family:monospace;
+  font-size:12px;
+  font-weight:bold;
+  box-shadow:0 5px 5px -5px #000;
+}
+
+.btns{
+  width:260px;
+  margin:auto;
+  margin-bottom:20px;
+}
+
+.lap{
+  width:80%;
+  margin:auto;
+  box-shadow:1px 1px 5px -1px #009696;
+  text-align:center;
+  overflow:auto;
+}
+
+.lap span{
+  display:inline-block;
+  width:100%;
+  padding:5px 0;
+  font-family:monospace;
+  font-size:16px;
+  color:black;
+  text-decoration:none;
+}

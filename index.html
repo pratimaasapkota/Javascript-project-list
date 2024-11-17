@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> pratima project</title>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Montserrat:500|Playfair+Display+SC:900|Raleway:400,600|Electrolize|Handlee" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+        <script src=https://code.jquery.com/jquery-3.4.0.js></script>
+        <script src=https://unpkg.com/sweetalert/dist/sweetalert.min.js></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" integrity="sha256-HtCCUh9Hkh//8U1OwcbD8epVEUdBvuI8wj1KtqMhNkI=" crossorigin="anonymous" />
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body> 
+    <script src="script.js"></script>
+    <header>
+    <h1 style="font-size:1.7em;margin:0 0 5px 0;padding:0 0 5px 0;font-weight:700;"> <i class="fa fa-bars" id="opn" style="font-size:1em;width:20px;"></i> Js/Jquery Mini-Projects</h1>
+    <!--div class="help" ><span class="fa fa-question-circle" style="font-size:1.2em;"></span><span style="font-size:1.2em"> Help</span></div>
+    <div class="info" onclick="about()"><span class="fa fa-info-circle" style="font-size:1.2em;"></span><span style="font-size:1.2em"> About</span></div-->
+    </header>
+    <br />
+    <div class="intro">
+        The below are some basic and advanced Javascript/Jquery projects . You can create your own projects for the title given below and comment your code.<br /><br />
+<div style="font-size:15px">
+   <b><i>NOTE:</i></b><br />
+   <ul style="margin-left:30px">
+       <li>click the title to read description.</li>
+       <li>you can see the demo <span class="intro-demo" style="transform:scale(0.85)">&#9654; Demo</span> of the projects listed below to know how it work's.</li>
+   </ul>
+ </div>
+    </div>
+    <div class="title" id="t1">
+        1. Calculator
+    </div>
+    <div class="description" id="d1">
+        <span>Beginner</span><br>Make a calculator with basic operations like addition, subtraction, multiplication, division, percentage and clear all.<br><br>
+        <span>Advanced</span><br>Make a scientific Calculator with Logarithmic and Trigonometric Operations.
+        <br /><br />
+        <span class="demo" id=".calc">&#9654; Demo</span><br /><br />
+        <div class="calc demo_cont">
+            <div class="input" id="input"></div>
+            <div class="result" id="result">0</div>
+            <div class="buttons">
+            <div class="main">
+            <button class="open_brace">(</button>
+            <button class="close_brace">)</button>
+            <button class="clr">C</button>
+            <button class="del" style="background:#555555;">del</button>
+            <button value="1" class="n">1</button>
+            <button value="2" class="n">2</button>
+            <button value="3" class="n">3</button>
+            <button value="+" class="o" style="background:#555555;">+</button>
+            <button value="4" class="n">4</button>
+            <button value="5" class="n">5</button>
+            <button value="6" class="n">6</button>
+            <button value="-" class="o" style="background:#555555;">-</button>
+            <button value="7" class="n">7</button>
+            <button value="8" class="n">8</button>
+            <button value="9" class="n">9</button>
+            <button value="x" class="o" style="background:#555555;">*</button>
+            <button value="." class="dot">.</button>
+            <button value="0" class="n">0</button>
+            <button value="=" class="eql">=</button>
+            <button value="/" class="o" style="background:#555555;">/</button>
+            </div>
+            <div class="more" id="more">
+                <div class="more_less" id="more_less"> </div>
+                <div class="more_option">
+                <button class="sqrt" id="sqrt">√</button>
+                    <button class="o">%</button>
+                    <button class="pi" id="pi">π</button>
+                    <button class="log" id="log">log</button>
+                    <button class="ln" id="ln">ln</button>
+                    <button class="sin" id="sin">sin</button>
+                    <button class="cos" id="cos">cos</button>
+                    <button class="tan" id="tan">tan</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="title" id="t2">
+        2. Unit Converter
+    </div>
+    <div class="description" id="d2">
+        <span>Beginner</span><br>Select any one unit of Measurement like length. Allow user to choose the input unit (example "cm") and the output unit (example "inch"). Take the value from user and show the output.<br><br>
+        <span>Advanced</span><br>Allow user to Select from a list of unit measurements like temperature, length, energy, time, mass etc.
+
+        <br /><br />
+        <span class="demo" id=".converter">&#9654; Demo</span><br /><br />
+        <div class="converter demo_cont">
+        <div style="font-family:monospace;font-weight:bold;color:#000;">UNIT CONVERTER</div>
+    <div class="heading" id="h1">Length</div>
+    <div class="desc" id="de1">
+        <span>Millimeter(mm):</span><br /> 
+        <input class="mm" type="number" placeholder="Millimeter...">
+        <br />
+        <span>Centimeter(cm):</span><br />
+        <input class="cm" type="number" placeholder="Centimeter...">
+        <br />
+        <span>Meter(m):</span><br />
+        <input class="m" type="number" 
+placeholder="Meter...">
+        <br />
+        <span>Kilometer(km):</span><br />  
+        <input class="km" type="number" placeholder="Kilometer...">
+        <br />
+        <span>Mile(mile):</span><br />
+        <input class="ml" type="number" placeholder="Mile...">
+        <br />
+        <span>Yards(yd):</span><br />
+        <input class="yd" type="number" placeholder="Yards...">
+        <br />
+        <span>Inch(in):</span><br />
+        <input class="in" type="number" placeholder="Inches...">
+        <br />
+        <span>Feet(ft):</span><br />
+        <input class="ft" type="number" placeholder="Feet...">
+        </div>
+        
+        <div class="heading" id="h2">Temperature</div>
+        <div class="desc" id="de2">
+            <span>Celsius(°C):</span><br /> 
+        <input class="°c" type="number" placeholder="Celsius...">
+        <br />
+        <span>Kelvin(K):</span><br />
+        <input class="k" type="number" placeholder="Kelvin...">
+        <br />
+        <span>Fahrenheit(°F):</span><br />
+        <input class="°f" type="number" 
+placeholder="Fahrenheit...">
+        </div>
+        
+        <div class="heading" id="h3">Weight</div>
+        <div class="desc" id="de3">
+            <span>Grams(g):</span><br /> 
+        <input class="g" type="number" placeholder="Grams...">
+        <br />
+        <span>Kilograms(kg):</span><br />
+        <input class="kg" type="number" placeholder="Kilograms...">
+        <br />
+        <span>Pounds(lb):</span><br />
+        <input class="po" type="number" 
+placeholder="Pounds...">
+        <br />
+        <span>Ounce(oz):</span><br />  
+        <input class="ou" type="number" placeholder="Ounce...">
+        <br />
+        <span>Stones(st):</span><br />
+        <input class="st" type="number" placeholder="Stones...">
+        </div>
+        
+        <div class="heading" id="h4">Speed</div>
+        <div class="desc" id="de4">
+            <span>MPH(m/hr):</span><br /> 
+        <input class="mph" type="number" placeholder="MPH...">
+        <br />
+        <span>KMPH(km/hr):</span><br />
+        <input class="kmph" type="number" placeholder="KMPH...">
+        <br />
+        <span>Knots(knots):</span><br />
+        <input class="knot" type="number" 
+placeholder="Knots...">
+        <br />
+        <span>Mach(mach):</span><br />  
+        <input class="mach" type="number" placeholder="Mach...">
+        </div>
+    </div>
+
+    </div>
+    
+    <div class="title" id="t3">
+        3. Analog & Digital Clock
+    </div>
+    <div class="description" id="d3">
+        <span>Beginner</span><br>Create a Digital Clock with javascript.<br><br>
+        <span>Advanced</span><br>Create a Analog Clock with javascript.
+
+        <br /><br />
+        <span class="demo" id=".clock">&#9654; Demo</span><br /><br />
+        <div class="clock demo_cont" style="width:auto;height:auto;text-align:center;">
+        <span style="font-weight:700;display:inline-block;margin-bottom:10px;">DIGITAL</span>
+        <div class="digital_clock">
+            <div class="dow">
+             <span id="sun">Sun</span>
+             <span id="mon">Mon</span>
+             <span id="tue">Tue</span>
+             <span id="wed">Wed</span>
+             <span id="thu">Thu</span>
+             <span id="fri">Fri</span>
+             <span id="sat">Sat</span>
+            </div>
+        <span class="clock_time" id="clock_time"></span><span class="date" id="date"></span>
+        </div>
+        <br />
+        <hr>
+        <span style="font-weight:700;display:inline-block;margin:20px 0 10px 0;">ANALOG</span>
+        <div class="analog_clock">
+            <div class="outer"></div>
+            <div class="pad"></div>
+            <div class="hh" id="hh"></div>
+            <div class="mh" id="mh"></div>
+            <div class="sh" id="sh"></div>
+            <div class="pin"></div>
+        </div>
+        </div>
+    </div>
+    
+
+    <div class="title" id="t4">
+        4. Color Picker
+    </div>
+    <div class="description" id="d4">
+        <span>Beginner</span><br>Adjust the RGB values to get the desired color.Display the Hex value and RGB value.<br><br>
+        <span>Advanced</span><br>Create a button which on clicking will copy the color code.
+       <br /><br />
+        <span class="demo" id=".color_picker">&#9654; Demo</span><br /> <br />
+        
+        <div class="color_picker demo_cont">
+        <div class="rgb"><span id="rgb">rgb(0, 0, 0)</span><button class="copy" id="copy_rgb" ontouchend="copy('rgb','#rgb-pop')">copy
+        <span class="popuptext" id="rgb-pop">copied!</span>
+        </button></div>
+        <div class="rgb"><span id="hex">#000000</span><button class="copy" id="copy_hex" ontouchend="copy('hex','#hex-pop')">copy
+        <span class="popuptext" id="hex-pop">copied!</span>
+        </button></div>
+        <div id="picker"></div>
+        <input type="range" class="slider" id="r" min="0" max="255" value="0">
+        <input type="range" class="slider" id="g" min="0" max="255" value="0">
+        <input type="range" class="slider" id="b" min="0" max="255" value="0">
+        </div>
+   
+    <script>
+        function copy(id,p){
+       var range = document.createRange(); 
+range.selectNode(document.getElementById(id)); 
+    window.getSelection().removeAllRanges();
+    window.getSelection().addRange(range);
+    document.execCommand("copy");
+    window.getSelection().removeAllRanges();
+   $(p).toggle();
+   setTimeout(function(){
+      $(p).toggle();
+   },500)
+   }
+    </script>
+        
+    </div>
+    <div class="title" id="t5">
+        5. Stop Watch
+    </div>
+    <div class="description" id="d5">
+        <span>Beginner</span><br>Create stopwatch with three basic functions: Start,Stop and Reset.
+        <br /><br />
+        <span class="demo" id=".stop_watch">&#9654; Demo</span><br /> <br />
+        <div class="stop_watch demo_cont" id="sw">
+            <div class="timer" id="timer">00:00:00</div>
+            <div class="btns">
+            <button id="start">START</button>
+            <button id="stop">STOP</button>
+            <button id="reset">RESET</button>
+            <button id="lap">LAP</button>
+            </div>
+            <div class="lap">
+            </div>
+        </div>
+    </div>
+</body>
+<script> 
+
+
+
+
+  /*$(window).on( "orientationchange", function() {
+if(screen.orientation.angle==0){
+    $('body').show();
+    
+}
+else{
+    $('body').hide();
+    alert("please change to portrait mode for better expericence");
+    }
+
+});
+$(window).trigger("orientationchange");*/
+</script>
+</html>

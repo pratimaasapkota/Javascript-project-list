@@ -725,12 +725,12 @@ $(function(){
    var month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
    var hours = (date.getHours()>12)?(date.getHours()-12):(date.getHours() == 0)?12 : date.getHours();
    var min = (date.getMinutes()>9)?date.getMinutes():("0"+date.getMinutes());
-   var sec = (date.getSeconds()>9)?date.getSeconds():("0"+date.getSeconds());
+   var sec = (date.getSeconds()>9)?date.getSeconds():("0"+date.getSeconds()); 
    var D = date.getDate();
    var mon = date.getMonth();
    var day = date.getDay();
    var year = date.getFullYear();
-   var dn = (date.getHours()>12)?" PM":" AM";
+   var dn = (date.getHours()>12)?" PM":" AM"; 
   $("#clock_time").html(hours+"<span id=\"sec\" style=\"font-size:1.2em;\">:</span>"+min+"<span style=\"font-size:13px;\">  "+dn+"</span>"+"<div style=\"font-size:16px\">"+month[mon]+" "+D+", "+year+"</div>");
   
    

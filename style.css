@@ -582,3 +582,26 @@ border-color: #555 transparent transparent transparent;
   box-shadow:0 5px 5px -5px #000;
 }
 
+.btns{
+  width:260px;
+  margin:auto;
+  margin-bottom:20px;
+}
+
+.lap{
+  width:80%;
+  margin:auto;
+  box-shadow:1px 1px 5px -1px #009696;
+  text-align:center;
+  overflow:auto;
+}
+
+.lap span{
+  display:inline-block;
+  width:100%;
+  padding:5px 0;
+  font-family:monospace;
+  font-size:16px;
+  color:black;
+  text-decoration:none;
+}

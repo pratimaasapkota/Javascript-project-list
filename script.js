@@ -859,4 +859,21 @@ var red=0,green=0,blue=0,hr,hg,hb;
         }
     });
     
-   
+    reset.click(function(){
+        stop.click();
+        timer.text("00:00:00");
+        Lap.text("");
+        Lap.css({"height":""});
+        start.text("START");
+});
+
+lap.click(function(){
+    if(running){
+        Lap.prepend("<span>"+timer.text()+"</span>");
+       if(parseInt(Lap.css("height"))>135)
+            Lap.css({"height":"135px"});
+            
+         } 
+    });
+        
+    });

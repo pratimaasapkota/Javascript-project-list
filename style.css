@@ -566,20 +566,6 @@ border-color: #555 transparent transparent transparent;
   color:black;
   
 }
-.stop_watch button{
-  width:55px;
-  border:none;
-  margin:0 0 0 4px;
-  padding:7px 0;
-  text-align:center;
-  border-radius:10px;
-  background:#009696;
-  color:#fff;
-  font-family:monospace;
-  font-size:12px;
-  font-weight:bold;
-  box-shadow:0 5px 5px -5px #000;
-}
 
 
 .btns{

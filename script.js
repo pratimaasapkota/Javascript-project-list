@@ -326,22 +326,7 @@ $(function(){
             //console.log(input.text())
             allowDot = false;
         }
-        else if(inpVal !='' && !isLastOperator() && allowDot){
-        if(inpVal[inpVal.length-1] == "(" && allowDot ){
-            input.text(inpVal + '0.');
-            //console.log(input.text())
-            allowDot = false;
-        }
-        else{
-            input.text(inpVal + '.');
-            //console.log(input.text())
-            allowDot = false;
-            }
-        }
-        else if(inpVal !='' && isLastOperator() && allowDot){
-            input.text(inpVal + '0.');
-            //console.log(input.text())
-            allowDot = false;
+        
         }
     }
     

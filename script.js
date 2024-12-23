@@ -858,7 +858,12 @@ var red=0,green=0,blue=0,hr,hg,hb;
             running = false;
         }
     });
-    
+    reset.click(function(){
+        stop.click();
+        timer.text("00:00:00");
+        Lap.text("");
+        Lap.css({"height":""});
+        start.text("START");
     
 });
 

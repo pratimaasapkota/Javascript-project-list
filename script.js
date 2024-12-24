@@ -852,10 +852,7 @@ var red=0,green=0,blue=0,hr,hg,hb;
         }
     });
     
-    stop.click(function(){
-        if(running){
-            clearInterval(tms);
-            running = false;
+    
         }
     });
     reset.click(function(){

@@ -851,7 +851,10 @@ var red=0,green=0,blue=0,hr,hg,hb;
             running = true;
         }
     });
-    
+    stop.click(function(){
+        if(running){
+            clearInterval(tms);
+            running = false;
     
         }
     });

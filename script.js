@@ -867,12 +867,7 @@ var red=0,green=0,blue=0,hr,hg,hb;
     
 });
 
-lap.click(function(){
-    if(running){
-        Lap.prepend("<span>"+timer.text()+"</span>");
-       if(parseInt(Lap.css("height"))>135)
-            Lap.css({"height":"135px"});
-            
+
          } 
     });
         

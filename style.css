@@ -571,7 +571,12 @@ border-color: #555 transparent transparent transparent;
   margin:auto;
   margin-bottom:20px;
 }
-
+.lap{
+  width:80%;
+  margin:auto;
+  box-shadow:1px 1px 5px -1px #009696;
+  text-align:center;
+  overflow:auto;
 }
 
 

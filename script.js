@@ -817,4 +817,62 @@ var red=0,green=0,blue=0,hr,hg,hb;
     
    }
    
-   
+   /*-------------------------------------
+   --------------Stop watch---------------
+   -------------------------------------*/
+     
+   var start = $("#start"), stop = $("#stop"), reset = $("#reset"), lap = $("#lap"), timer = $("#timer"), Lap = $(".lap"), min = 0,sec = 0,ms = 0,tms,running=false;
+    function startTimer(){
+        ms = parseInt(ms)+1;
+        if(ms == 100){
+            ms = 0;
+            sec = parseInt(sec)+1;
+        }
+        if(sec == 60){
+            sec = 0;
+            min = parseInt(min)+1;
+        }
+        if(ms<10)
+            ms = '0'+parseInt(ms);
+            
+        if(sec<10)
+            sec = '0'+parseInt(sec);
+            
+        if(min<10)
+            min = '0'+parseInt(min);
+        
+        timer.text(min+':'+sec+':'+ms);
+    }
+    
+    start.click(function(){
+        if(!running){
+            tms = setInterval(startTimer,10);
+            start.text("RESUME");
+            running = true;
+        }
+    });
+    stop.click(function(){
+        if(running){
+            clearInterval(tms);
+            running = false;
+    
+        }
+    });
+    reset.click(function(){
+        stop.click();
+        timer.text("00:00:00");
+        Lap.text("");
+        Lap.css({"height":""});
+        start.text("START");
+    
+});
+lap.click(function(){
+    if(running){
+        Lap.prepend("<span>"+timer.text()+"</span>");
+       if(parseInt(Lap.css("height"))>135)
+            Lap.css({"height":"135px"});
+            
+         } 
+    });
+        
+    });
